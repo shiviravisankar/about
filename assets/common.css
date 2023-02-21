@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,400&display=swap');
-
 body{
-    background-color: #1d1d1d;
     margin: auto;
     padding: auto;
     width: 100%;
 }
-img{
-    height: 100vh;
-    width: 100vw;
+
+/*FONTS*/
+@font-face {
+    font-family: 'plantinlight', 'plantinsemibold';
+    src: url('plantin_light-webfont.woff2') format('woff2'),
+         url('plantin_light-webfont.woff') format('woff');
+         src: url('plantin_semibold-webfont.woff2') format('woff2'),
+         url('plantin_semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
