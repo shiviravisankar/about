@@ -1,17 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+:root{
+    --body-copy: 17px;
+    --body-copy-line-height: calc(var(--body-copy)*1.5);
+
+    --nav-menu: 24px;
+
+    --main-heading: 44px;
+    --main-heading-line-height:calc(var(--main-heading));
+
+    --sub-heading: 24px;
+    --sub-heading-line-height:calc(var(--sub-heading));
+}
+
 body{
     margin: auto;
     padding: auto;
     width: 100%;
+    font-family: 'plantinsemibold';
 }
 
 /*FONTS*/
 @font-face {
-    font-family: 'plantinlight', 'plantinsemibold';
-    src: url('plantin_light-webfont.woff2') format('woff2'),
-         url('plantin_light-webfont.woff') format('woff');
-         src: url('plantin_semibold-webfont.woff2') format('woff2'),
-         url('plantin_semibold-webfont.woff') format('woff');
+    font-family: 'plantinlight';
+    src: url('../assets/plantin/plantin_light-webfont.woff2') format('woff2'),
+         url('../assets/plantin/plantin_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'plantinsemibold';
+    src: url('../assets/plantin/plantin_semibold-webfont.woff2') format('woff2'),
+         url('../assets/plantin/plantin_semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*NAVBAR*/
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        position: sticky;
+        top: 0;
+        font-size: var(--nav-menu);
+        margin-bottom: 30px;
+        padding-top: 40px;
+        margin-left: 50px;
+    }
+
+    .name{
+    display: flex;
+    flex: 60%;
+    font-family: 'Work Sans' , serif;
+    color: red;
+    font-size: 30px;
+    text-transform: uppercase;
+    }
+
+
+    .sub{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .nav{
+        margin-right: 80px;
+    }
